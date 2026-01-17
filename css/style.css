@@ -1,0 +1,110 @@
+.card-container {
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+/* Mobile first */
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #EFDECD;
+  padding: 30px;
+  width: 100%;
+  max-width:600px;
+  gap:20px;
+}
+
+.profile_image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 25px 25px 0 25px;
+}
+
+.details-wrapper{
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+    width :100%
+}
+
+.contact-details,
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 5px;
+}
+
+/* Typography */
+.name,
+.company-name {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.role {
+  font-size: 18px;
+  font-style: italic;
+}
+
+.phone,
+.company-slogan {
+  font-size: 16px;
+  font-style: italic;
+}
+
+
+
+
+@media (min-width: 500px) and (max-width: 767px) {
+  .contact-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .details-wrapper {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+  }
+    .contact-details,
+    .company-details {
+        flex-direction: column;     
+        text-align: left;
+    }
+}
+
+
+
+/* Screens 768px and up */
+@media (min-width: 768px) {
+  .contact-card {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 40px;
+    max-width: 800px;
+    }
+
+
+  .profile_image {
+    margin-bottom: 0;
+    justify-content: center;
+  }
+
+  .details-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .contact-details,
+  .company-details {
+    text-align: left;
+  }
+}
